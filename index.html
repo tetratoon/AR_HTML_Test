@@ -5,11 +5,13 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous">
         </script> -->
+        <script
+            src="geofind.js"></script>
         <script>
             window.onload=function(){
                 document.querySelector('#find-me').addEventListener('click', geoFindMe);
             }
-            function geoFindMe() {
+            /* function geoFindMe() {
 
                 const status = document.querySelector('#status');
                 const mapLink = document.querySelector('#map-link');
@@ -37,7 +39,7 @@
                     navigator.geolocation.getCurrentPosition(success, error);
                 }
 
-            }
+            } */
             
 
             // document.querySelector('#find-me').addEventListener('click', geoFindMe);
