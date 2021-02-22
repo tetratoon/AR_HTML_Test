@@ -14,15 +14,21 @@
         </script> -->
         <script
             src="geofind.js"></script>
+        <script 
+            src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script>
             window.onload=function(){
                 document.querySelector('#find-me').addEventListener('click', geoFindMe);
+                document.querySelector('#direction').addEventListener('click', geoShowDirection);
+                document.querySelector('#getData').addEventListener('click', getData);
             }
             
         </script>
     </head>
     <body>
         <button id = "find-me">Show my location</button><br/>
+        <button id = "direction">Show my direction</button><br/>
+        <button id = "getData">get Data</button><br/>
         <p id = "status"></p>
         <a id = "map-link" target="_blank"></a>
     </body>
